@@ -29,7 +29,7 @@ function addOrgs() {
   let orgsList = document.querySelector("#orgs");
   orgs
     .sort(() => Math.random() - .5)
-    .map(org => `<li><a href='${org.link}'>${org.name}</li>`)
+    .map(org => `<li><a href='${org.link}' target="_blank">${org.name}</li>`)
     .forEach(html => orgsList.innerHTML += html);
 }
 
