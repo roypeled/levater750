@@ -16,7 +16,7 @@ body {
 
 .seperator {
   font-size: 3em;
-  margin: 50px;
+  margin: 50px !important;
   text-align: center;
 }
 
@@ -166,8 +166,38 @@ aside.other-plans, footer {
 }
 
 @media screen and (max-width: 1300px) {
+  body {
+    padding: 5px;
+    margin: 10px;
+  }
   main {
     flex-direction: column;
     align-items: center;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+
+  ol {
+    padding: 0;
+  }
+
+  blockquote {
+    margin: .5em;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  ol li {
+    list-style: none;
+    padding: 0;
+  }
+
+  .other-plans {
+    padding: 5px;
   }
 }
